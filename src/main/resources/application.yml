@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    consul:
+      enabled: true
+      host: localhost
+      port: 8500
+      config:
+        fail-fast: false
+  application:
+    name: consul-config-demo
+    

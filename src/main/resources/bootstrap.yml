@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    consul:
+      enabled: true
+      host: localhost
+      port: 8500
+      config:
+        enabled: true
+        format: FILES
+        prefixes: application/${spring.active.profilr}
+        profile-separator: "::"
+  application:
+    name: consul-config-demo
